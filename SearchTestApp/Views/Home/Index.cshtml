@@ -1,0 +1,44 @@
+﻿
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+        </div>
+    </div>
+  
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">   
+        <p class="w3-center w3-large">How to determine the popularity of programming languages on the internet?</p>
+        <h3 class="w3-center">EASY!</h3>
+        <p class="w3-center w3-large">Just type below:</p>
+        <div style="margin-top:48px">
+            <br>
+            <form action="@Url.Action("Search","Home")">
+                <p><input class="w3-input w3-border" type="text" placeholder="First Programming Language" required name="firstQuery"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Second Programming Language" required name="secondQuery"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND SEARCH QUERY
+                    </button>
+                </p>
+            </form>           
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">       
+        <div class="w3-xlarge w3-section">
+        </div>
+    </footer>
+</body>
+</html>
+
+
